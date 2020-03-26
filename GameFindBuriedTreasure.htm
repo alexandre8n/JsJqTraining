@@ -17,7 +17,7 @@
 		  top: 5px;
 		  left: 5px;
 		  z-index: 2;
-		  visibility: visible;
+		  visibility: hidden;
 		}
 	  </style>
 </head>
@@ -39,6 +39,7 @@
 	<script src="file:jsFiles/Functions.js"></script>
 	<script>
 		var clicks = 0;
+		$("#distance").text("Just click on the map. Observe the hint");
 		$("#map").click(function (event){
 			clicks++;
 			var distance =  getDistance(event, target);
